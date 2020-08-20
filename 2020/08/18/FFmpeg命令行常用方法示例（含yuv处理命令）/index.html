@@ -198,7 +198,7 @@
         
     
         
-        <a title="neteasemusic" href="https://music.163.com/#/user/home?id=88151013" target="_blank">
+        <a title="neteasemusic" href="https://music.163.com/#/my/m/music/playlist?id=731019731" target="_blank">
             
                 <svg class="iconfont-svg" aria-hidden="true">
                     <use xlink:href="#icon-neteasemusic"></use>
@@ -213,7 +213,7 @@
 
 
 <ul>
-    <li><div class="all active" data-rel="全部文章">全部文章<small>(3)</small></div></li>
+    <li><div class="all active" data-rel="全部文章">全部文章<small>(4)</small></div></li>
     
         
             
@@ -233,7 +233,15 @@
     
         
             
-            <li><div data-rel="文件编写">文件编写<small>(1)</small></div>
+            <li><div data-rel="文件">文件<small>(1)</small></div>
+                
+            </li>
+            
+        
+    
+        
+            
+            <li><div data-rel="规划">规划<small>(1)</small></div>
                 
             </li>
             
@@ -249,7 +257,7 @@
     </div>
     <div><a class="about  hasFriend  site_url"  href="/about">关于</a><a style="width: 50%"  class="friends">友链</a></div>
 </div>
-<input type="hidden" id="yelog_site_posts_number" value="3">
+<input type="hidden" id="yelog_site_posts_number" value="4">
 <input type="hidden" id="yelog_site_word_count" value="3k">
 <div style="display: none">
     <span id="busuanzi_value_site_uv"></span>
@@ -304,7 +312,7 @@
             </li>
         
             <li class="article-tag-list-item">
-                <i class="iconfont icon-tag"></i><a>MD</a>
+                <i class="iconfont icon-tag"></i><a>Markdown</a>
             </li>
         
     </div>
@@ -314,6 +322,14 @@
     
     <nav id="title-list-nav">
         
+        <a  class="全部文章 规划 "
+           href="/2020/08/21/%E6%8A%80%E6%9C%AF%E5%8F%91%E5%B1%95%E4%B9%8B%E8%B7%AF/"
+           data-tag=""
+           data-author="" >
+            <span class="post-title" title="技术发展之路">技术发展之路</span>
+            <span class="post-date" title="2020-08-21 00:10:36">2020/08/21</span>
+        </a>
+        
         <a  class="全部文章 技术 "
            href="/2020/08/18/FFmpeg%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E7%A4%BA%E4%BE%8B%EF%BC%88%E5%90%AByuv%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%EF%BC%89/"
            data-tag="Ffmpeg"
@@ -322,9 +338,9 @@
             <span class="post-date" title="2020-08-18 23:39:37">2020/08/18</span>
         </a>
         
-        <a  class="全部文章 文件编写 "
+        <a  class="全部文章 文件 "
            href="/2020/08/16/MD%E8%AF%AD%E6%B3%95/"
-           data-tag="MD"
+           data-tag="Markdown"
            data-author="" >
             <span class="post-title" title="MD语法">MD语法</span>
             <span class="post-date" title="2020-08-16 01:53:29">2020/08/16</span>
@@ -382,7 +398,7 @@
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-18 23:52:52'>2020-08-18 23:39</time>
+            发布时间 : <time class="date" title='最后更新: 2020-08-21 00:00:25'>2020-08-18 23:39</time>
         
     </div>
     <div class="article-meta">
@@ -424,16 +440,17 @@
     .left-col .switch-area {
         display: none;
     }
-    .toc-level-3 i,
-    .toc-level-3 ol {
+    .toc-level-4 i,
+    .toc-level-4 ol {
         display: none !important;
     }
 </style>
-wewe</div>
+</div>
+
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><div class='inner-toc'><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%BC%95%E8%A8%80"><span class="toc-text">1、引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%A4%BA%E4%BE%8B"><span class="toc-text">2、常用命令示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81-%E8%BD%AC%E6%8D%A2%E6%88%90H264%E7%A0%81%E6%B5%81"><span class="toc-text">2.1、 转换成H264码流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81-%E8%BD%AC%E6%8D%A2%E6%88%90H265%E7%A0%81%E6%B5%81"><span class="toc-text">2.2、 转换成H265码流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81-%E8%AE%BE%E7%BD%AE%E8%BE%93%E5%87%BA%E8%A7%86%E9%A2%91%E7%9A%84%E5%88%86%E8%BE%A8%E7%8E%87"><span class="toc-text">2.3、 设置输出视频的分辨率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E3%80%81%E8%AE%BE%E7%BD%AE%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E7%9A%84%E9%9F%B3%E8%A7%86%E9%A2%91%E6%AF%94%E7%89%B9%E7%8E%87"><span class="toc-text">2.4、设置输出文件的音视频比特率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5%E3%80%81-%E5%89%AA%E5%88%87%E6%9F%90%E6%AE%B5%E8%A7%86%E9%A2%91"><span class="toc-text">2.5、 剪切某段视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6%E3%80%81-%E5%88%86%E7%A6%BB%E9%9F%B3%E8%A7%86%E9%A2%91%E6%B5%81%E4%BF%9D%E5%AD%98%E4%B8%BA%E4%B8%8D%E5%90%8C%E6%96%87%E4%BB%B6"><span class="toc-text">2.6、 分离音视频流保存为不同文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7%E3%80%81%E5%90%88%E5%B9%B6%E5%A4%9A%E4%B8%AA%E9%9F%B3%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E4%B8%BA%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="toc-text">2.7、合并多个音视频文件为一个文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8%E3%80%81%E6%8F%90%E5%8F%96%E8%A7%86%E9%A2%91%E5%9B%BE%E5%83%8F%E4%BF%9D%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6-%E5%B0%86%E8%A7%86%E9%A2%91%E5%88%86%E8%A7%A3%E4%B8%BA%E5%8D%95%E5%B9%85%E5%9B%BE%E7%89%87"><span class="toc-text">2.8、提取视频图像保存为图片文件(将视频分解为单幅图片)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9%E3%80%81-%E8%BD%AC%E6%8D%A2%E6%88%90YUV%E5%8E%9F%E5%A7%8B%E6%96%87%E4%BB%B6"><span class="toc-text">2.9、 转换成YUV原始文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10%E3%80%81YUV%E5%BA%8F%E5%88%97%E8%BD%AC%E5%87%BAAVI%E6%96%87%E4%BB%B6"><span class="toc-text">2.10、YUV序列转出AVI文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-11%E3%80%81%E6%8E%A7%E5%88%B6%E5%85%B3%E9%94%AE%E5%B8%A7%E9%97%B4%E9%9A%94%E5%92%8CB%E5%B8%A7"><span class="toc-text">2.11、控制关键帧间隔和B帧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-12%E3%80%81-%E5%A4%9A%E4%B8%AA%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E6%8B%BC%E6%8E%A5"><span class="toc-text">2.12、 多个视频文件拼接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81YUV%E5%A4%84%E7%90%86%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0ing%EF%BC%89"><span class="toc-text">3、YUV处理相关命令（持续更新ing）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81%E6%9F%A5%E7%9C%8Bffmpeg%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9Byuv%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-text">3.1、查看ffmpeg支持哪些yuv格式的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81ffmpeg%E8%BD%AC%E6%8D%A2yuv%E6%A0%BC%E5%BC%8F%E5%91%BD%E4%BB%A4"><span class="toc-text">3.2、ffmpeg转换yuv格式命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E3%80%81ffmpeg%E5%91%BD%E4%BB%A4%E8%A1%8Cyuv%E7%BC%A9%E6%94%BE%E5%91%BD%E4%BB%A4"><span class="toc-text">3.3、ffmpeg命令行yuv缩放命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4%E3%80%81ffmpeg%E8%A7%A3%E7%A0%81%E7%A0%81%E6%B5%81%E5%91%BD%E4%BB%A4"><span class="toc-text">3.4、ffmpeg解码码流命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5%E3%80%81ffmpeg-yuv%E8%BD%ACavi"><span class="toc-text">3.5、ffmpeg yuv转avi</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6%E3%80%81ffmpeg-%E8%A3%B8%E7%A0%81%E6%B5%81%E8%BD%ACavi"><span class="toc-text">3.6、ffmpeg 裸码流转avi</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7%E3%80%81ffmpeg-avi%E8%BD%AC%E8%A3%B8%E7%A0%81%E6%B5%81"><span class="toc-text">3.7、ffmpeg avi转裸码流</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-7-1-%E6%8F%90%E5%8F%96%E8%A3%B8%E7%A0%81%E6%B5%81"><span class="toc-text">3.7.1 提取裸码流</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-7-2-%E6%8F%90%E5%8F%96%E8%8B%A5%E5%B9%B2%E5%B8%A7%E6%95%B0%E7%A0%81%E6%B5%81"><span class="toc-text">3.7.2 提取若干帧数码流</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8%E3%80%81YUV%E8%A3%81%E5%89%AA%E5%8A%9F%E8%83%BD"><span class="toc-text">3.8、YUV裁剪功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81FFMPEG%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E"><span class="toc-text">4、FFMPEG常用参数说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E4%B8%BB%E8%A6%81%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-text">4.1 主要参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E8%A7%86%E9%A2%91%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-text">4.2 视频参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E9%9F%B3%E9%A2%91%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-text">4.3 音频参数：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%B0%8F%E7%BB%93"><span class="toc-text">5、小结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E6%96%87%E6%A1%A3%E5%8F%82%E8%80%83"><span class="toc-text">6、文档参考</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></li></ol></div></p>
+        <p><div class='inner-toc'><h2>本文目录</h2><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#1%E3%80%81%E5%BC%95%E8%A8%80"><span class="toc-text">1、引言</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#2%E3%80%81%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4%E7%A4%BA%E4%BE%8B"><span class="toc-text">2、常用命令示例</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#2-1%E3%80%81-%E8%BD%AC%E6%8D%A2%E6%88%90H264%E7%A0%81%E6%B5%81"><span class="toc-text">2.1、 转换成H264码流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-2%E3%80%81-%E8%BD%AC%E6%8D%A2%E6%88%90H265%E7%A0%81%E6%B5%81"><span class="toc-text">2.2、 转换成H265码流</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-3%E3%80%81-%E8%AE%BE%E7%BD%AE%E8%BE%93%E5%87%BA%E8%A7%86%E9%A2%91%E7%9A%84%E5%88%86%E8%BE%A8%E7%8E%87"><span class="toc-text">2.3、 设置输出视频的分辨率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-4%E3%80%81%E8%AE%BE%E7%BD%AE%E8%BE%93%E5%87%BA%E6%96%87%E4%BB%B6%E7%9A%84%E9%9F%B3%E8%A7%86%E9%A2%91%E6%AF%94%E7%89%B9%E7%8E%87"><span class="toc-text">2.4、设置输出文件的音视频比特率</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-5%E3%80%81-%E5%89%AA%E5%88%87%E6%9F%90%E6%AE%B5%E8%A7%86%E9%A2%91"><span class="toc-text">2.5、 剪切某段视频</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-6%E3%80%81-%E5%88%86%E7%A6%BB%E9%9F%B3%E8%A7%86%E9%A2%91%E6%B5%81%E4%BF%9D%E5%AD%98%E4%B8%BA%E4%B8%8D%E5%90%8C%E6%96%87%E4%BB%B6"><span class="toc-text">2.6、 分离音视频流保存为不同文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-7%E3%80%81%E5%90%88%E5%B9%B6%E5%A4%9A%E4%B8%AA%E9%9F%B3%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E4%B8%BA%E4%B8%80%E4%B8%AA%E6%96%87%E4%BB%B6"><span class="toc-text">2.7、合并多个音视频文件为一个文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-8%E3%80%81%E6%8F%90%E5%8F%96%E8%A7%86%E9%A2%91%E5%9B%BE%E5%83%8F%E4%BF%9D%E5%AD%98%E4%B8%BA%E5%9B%BE%E7%89%87%E6%96%87%E4%BB%B6-%E5%B0%86%E8%A7%86%E9%A2%91%E5%88%86%E8%A7%A3%E4%B8%BA%E5%8D%95%E5%B9%85%E5%9B%BE%E7%89%87"><span class="toc-text">2.8、提取视频图像保存为图片文件(将视频分解为单幅图片)</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-9%E3%80%81-%E8%BD%AC%E6%8D%A2%E6%88%90YUV%E5%8E%9F%E5%A7%8B%E6%96%87%E4%BB%B6"><span class="toc-text">2.9、 转换成YUV原始文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-10%E3%80%81YUV%E5%BA%8F%E5%88%97%E8%BD%AC%E5%87%BAAVI%E6%96%87%E4%BB%B6"><span class="toc-text">2.10、YUV序列转出AVI文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-11%E3%80%81%E6%8E%A7%E5%88%B6%E5%85%B3%E9%94%AE%E5%B8%A7%E9%97%B4%E9%9A%94%E5%92%8CB%E5%B8%A7"><span class="toc-text">2.11、控制关键帧间隔和B帧</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-12%E3%80%81-%E5%A4%9A%E4%B8%AA%E8%A7%86%E9%A2%91%E6%96%87%E4%BB%B6%E6%8B%BC%E6%8E%A5"><span class="toc-text">2.12、 多个视频文件拼接</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#3%E3%80%81YUV%E5%A4%84%E7%90%86%E7%9B%B8%E5%85%B3%E5%91%BD%E4%BB%A4%EF%BC%88%E6%8C%81%E7%BB%AD%E6%9B%B4%E6%96%B0ing%EF%BC%89"><span class="toc-text">3、YUV处理相关命令（持续更新ing）</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#3-1%E3%80%81%E6%9F%A5%E7%9C%8Bffmpeg%E6%94%AF%E6%8C%81%E5%93%AA%E4%BA%9Byuv%E6%A0%BC%E5%BC%8F%E7%9A%84%E8%BD%AC%E6%8D%A2"><span class="toc-text">3.1、查看ffmpeg支持哪些yuv格式的转换</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-2%E3%80%81ffmpeg%E8%BD%AC%E6%8D%A2yuv%E6%A0%BC%E5%BC%8F%E5%91%BD%E4%BB%A4"><span class="toc-text">3.2、ffmpeg转换yuv格式命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-3%E3%80%81ffmpeg%E5%91%BD%E4%BB%A4%E8%A1%8Cyuv%E7%BC%A9%E6%94%BE%E5%91%BD%E4%BB%A4"><span class="toc-text">3.3、ffmpeg命令行yuv缩放命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-4%E3%80%81ffmpeg%E8%A7%A3%E7%A0%81%E7%A0%81%E6%B5%81%E5%91%BD%E4%BB%A4"><span class="toc-text">3.4、ffmpeg解码码流命令</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-5%E3%80%81ffmpeg-yuv%E8%BD%ACavi"><span class="toc-text">3.5、ffmpeg yuv转avi</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-6%E3%80%81ffmpeg-%E8%A3%B8%E7%A0%81%E6%B5%81%E8%BD%ACavi"><span class="toc-text">3.6、ffmpeg 裸码流转avi</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-7%E3%80%81ffmpeg-avi%E8%BD%AC%E8%A3%B8%E7%A0%81%E6%B5%81"><span class="toc-text">3.7、ffmpeg avi转裸码流</span></a><ol class="toc-child"><li class="toc-item toc-level-4"><a class="toc-link" href="#3-7-1-%E6%8F%90%E5%8F%96%E8%A3%B8%E7%A0%81%E6%B5%81"><span class="toc-text">3.7.1 提取裸码流</span></a></li><li class="toc-item toc-level-4"><a class="toc-link" href="#3-7-2-%E6%8F%90%E5%8F%96%E8%8B%A5%E5%B9%B2%E5%B8%A7%E6%95%B0%E7%A0%81%E6%B5%81"><span class="toc-text">3.7.2 提取若干帧数码流</span></a></li></ol></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-8%E3%80%81YUV%E8%A3%81%E5%89%AA%E5%8A%9F%E8%83%BD"><span class="toc-text">3.8、YUV裁剪功能</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#4%E3%80%81FFMPEG%E5%B8%B8%E7%94%A8%E5%8F%82%E6%95%B0%E8%AF%B4%E6%98%8E"><span class="toc-text">4、FFMPEG常用参数说明</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#4-1-%E4%B8%BB%E8%A6%81%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-text">4.1 主要参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-2-%E8%A7%86%E9%A2%91%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-text">4.2 视频参数：</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-3-%E9%9F%B3%E9%A2%91%E5%8F%82%E6%95%B0%EF%BC%9A"><span class="toc-text">4.3 音频参数：</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#5%E3%80%81%E5%B0%8F%E7%BB%93"><span class="toc-text">5、小结</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#6%E3%80%81%E6%96%87%E6%A1%A3%E5%8F%82%E8%80%83"><span class="toc-text">6、文档参考</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></li></ol></div></p>
 <h2 id="1、引言"><a href="#1、引言" class="headerlink" title="1、引言"></a>1、引言</h2><p>FFMPEG以其强大的功能而在音视频领域著称，更重要的是它还是开源的！音视频格式转换、裁剪、拼接、提取字幕或某音轨等等，它都能胜任，可谓一把瑞士军刀，小巧但功能强大，是音视频研究的必备利器之一。</p>
 <h2 id="2、常用命令示例"><a href="#2、常用命令示例" class="headerlink" title="2、常用命令示例"></a>2、常用命令示例</h2><h3 id="2-1、-转换成H264码流"><a href="#2-1、-转换成H264码流" class="headerlink" title="2.1、 转换成H264码流"></a>2.1、 转换成H264码流</h3><pre><code>ffmpeg -i input_file -vcodec h264 output_file</code></pre>
 <p>其中 -i 表示输入文件， -vcodec h264 表示视频编解码方式为 H264。</p>
@@ -512,7 +529,8 @@ ffmpeg -s widthxheight -i input.yuv -c:v rawvideo -filter:v select=&quot;between
 <h2 id="6、文档参考"><a href="#6、文档参考" class="headerlink" title="6、文档参考"></a>6、文档参考</h2><p>官网翻译文档：<a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/other-doc-cn-ffmpeg/ffmpeg-doc-cn-40.md">https://www.bookstack.cn/read/other-doc-cn-ffmpeg/ffmpeg-doc-cn-40.md</a><br>官方ffmpeg命令行参考文档：<a target="_blank" rel="noopener" href="http://ffmpeg.org/ffmpeg.html">http://ffmpeg.org/ffmpeg.html</a></p>
 <p>更多ffmpeg命令使用可参考：<br><a target="_blank" rel="noopener" href="http://processors.wiki.ti.com/index.php/Open_Source_Video_Processing_Tools_-_MPlayer,_FFMpeg,_AviSynth,_MKVToolnix,_MP4Box#Downloads">http://processors.wiki.ti.com/index.php/Open_Source_Video_Processing_Tools_-_MPlayer,_FFMpeg,_AviSynth,_MKVToolnix,_MP4Box#Downloads</a><br><a target="_blank" rel="noopener" href="http://ffmpeg.org/ffmpeg-filters.html#aselect_002c-select">http://ffmpeg.org/ffmpeg-filters.html#aselect_002c-select</a><br><a target="_blank" rel="noopener" href="https://lists.ffmpeg.org/pipermail/ffmpeg-user/2017-February/035335.html">https://lists.ffmpeg.org/pipermail/ffmpeg-user/2017-February/035335.html</a><br><a target="_blank" rel="noopener" href="https://www.bookstack.cn/read/other-doc-cn-ffmpeg/ffmpeg-doc-cn-40.md">https://www.bookstack.cn/read/other-doc-cn-ffmpeg/ffmpeg-doc-cn-40.md</a><br><a target="_blank" rel="noopener" href="https://blog.csdn.net/SoaringLee_fighting/article/details/56015567">https://blog.csdn.net/SoaringLee_fighting/article/details/56015567</a><br><a target="_blank" rel="noopener" href="https://www.suninf.net/2017/02/ffmpeg-command-usage.html">https://www.suninf.net/2017/02/ffmpeg-command-usage.html</a></p>
 <hr>
-<h2 id="THE-END"><a href="#THE-END" class="headerlink" title="THE END!"></a>THE END!</h2>
+<h2 id="THE-END"><a href="#THE-END" class="headerlink" title="THE END!"></a><label style="color:red">THE END!</label></h2><p>本文转载至：<a target="_blank" rel="noopener" href="https://soaringleefighting.github.io/2018/09/20/%E3%80%90Codecs%E7%B3%BB%E5%88%97%E3%80%91FFMPEG%20%E5%91%BD%E4%BB%A4%E8%A1%8C%E5%B8%B8%E7%94%A8%E6%96%B9%E6%B3%95%E7%A4%BA%E4%BE%8B%EF%BC%88%E5%90%AByuv%E5%A4%84%E7%90%86%E5%91%BD%E4%BB%A4%EF%BC%89/">https://soaringleefighting.github.io</a></p>
+
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 544752682@qq.com </span>
     </div>
@@ -713,25 +731,6 @@ ffmpeg -s widthxheight -i input.yuv -c:v rawvideo -filter:v select=&quot;between
     
 
     /*文章列表背景图*/
-    
-    .nav-right:before {
-        content: ' ';
-        display: block;
-        position: absolute;
-        left: 0;
-        top: 0;
-        width: 100%;
-        height: 100%;
-        opacity: 0.3;
-        background: url("https://i.loli.net/2019/07/22/5d3521411f3f169375.png");
-        background-repeat: no-repeat;
-        background-position: 50% 0;
-        -ms-background-size: cover;
-        -o-background-size: cover;
-        -moz-background-size: cover;
-        -webkit-background-size: cover;
-        background-size: cover;
-    }
     
 
     
