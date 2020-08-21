@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | 柯洁的博客</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="about | 柯洁的博客">
+  <title>Linux常用命令 | 柯洁的博客</title>
+  <meta name="keywords" content=" Linux ">
+  <meta name="description" content="Linux常用命令 | 柯洁的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Why Blog对博客的理解喜欢写Blog的人，会经历三个阶段。  第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。   第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。   第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。  我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对">
 <meta property="og:type" content="website">
@@ -425,24 +425,39 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-Linux常用命令" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
+        <h1 class="article-title">Linux常用命令</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="技术">技术</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color1">Linux</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-16 03:52:45'>2020-08-16 03:48</time>
+            发布时间 : <time class="date" title='最后更新: 2020-08-21 23:11:26'>2020-08-18 23:39</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:403</span>
+        <span>字数:794</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -472,7 +487,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ekkejie"><span class="toc-text">关于kkejie</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF"><span class="toc-text">查看系统信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E6%9F%A5%E6%89%BE%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%96%87%E4%BB%B6%E5%B9%B6%E5%88%A0%E9%99%A4"><span class="toc-text">linux查找符合条件的文件并删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E5%89%8D%E5%90%8E%E5%8F%B0%E6%93%8D%E4%BD%9C%E7%94%A8%E5%88%B0%E4%BB%A5%E4%B8%8B%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%AE%9E%E4%BE%8B"><span class="toc-text">进程前后台操作用到以下命令：实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4"><span class="toc-text">命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -489,30 +504,225 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于kkejie"><a href="#关于kkejie" class="headerlink" title="关于kkejie"></a>关于kkejie</h2><p><strong>kkejie</strong> 是博主（柯洁）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p><code>3-hexo</code> 主题使用交流可以加 Q群: <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e8cf083cc097141eaf323396f1766809b8e90ff00c67bb441898f672892f6904"><img data-ignore border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="3-hexo使用交流" title="3-hexo使用交流"></a></p>
-<p>主要功能：</p>
+        <p><div class='inner-toc'><h2>本文目录</h2><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF"><span class="toc-text">查看系统信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E6%9F%A5%E6%89%BE%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%96%87%E4%BB%B6%E5%B9%B6%E5%88%A0%E9%99%A4"><span class="toc-text">linux查找符合条件的文件并删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E5%89%8D%E5%90%8E%E5%8F%B0%E6%93%8D%E4%BD%9C%E7%94%A8%E5%88%B0%E4%BB%A5%E4%B8%8B%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%AE%9E%E4%BE%8B"><span class="toc-text">进程前后台操作用到以下命令：实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4"><span class="toc-text">命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></li></ol></div></p>
+<h2 id="查看系统信息"><a href="#查看系统信息" class="headerlink" title="查看系统信息"></a>查看系统信息</h2><ol>
+<li>查看物理CPU的个数<pre><code class="sh">cat /proc/cpuinfo | grep &quot;physical id&quot; | sort | uniq | wc -l</code></pre>
+</li>
+<li>查看物理CPU内核的个数<pre><code class="sh">cat /proc/cpuinfo | grep &quot;cpu cores&quot; | uniq</code></pre>
+</li>
+<li>查看所有逻辑CPU的个数<pre><code class="sh">cat /proc/cpuinfo | grep &quot;processor&quot; | wc -l</code></pre>
+</li>
+<li>查看每个物理CPU中逻辑CPU的个数<pre><code class="sh">cat /proc/cpuinfo | grep &#39;siblings&#39; | uniq</code></pre>
+</li>
+<li>查询CPU是否启用超线程<pre><code class="sh">cat /proc/cpuinfo | grep -e &quot;cpu cores&quot; -e &quot;siblings&quot; | sort | uniq</code></pre>
+</li>
+</ol>
+<h2 id="linux查找符合条件的文件并删除"><a href="#linux查找符合条件的文件并删除" class="headerlink" title="linux查找符合条件的文件并删除"></a>linux查找符合条件的文件并删除</h2><ol>
+<li><p>找到根目录下所有的以test开头的文件并把查找结果当做参数传给rm -rf命令进行删除： </p>
+<pre><code class="sh">find / -name “test*” |xargs rm -rf 
+find / -name “test*” -exec rm -rf &amp;#123;&amp;#125; \; 
+rm -rf $(find / -name “test”)</code></pre>
+</li>
+<li><p>如果想指定递归深度，可以这样(只会查找三层目录中符合条件的文件并删除掉！)： </p>
+<pre><code class="sh">find / -maxdepth 3 -name “*.mp3” |xargs rm -rf 
+find / -maxdepth 3 -name “test*” -exec rm -rf &amp;#123;&amp;#125; \; 
+rm -rf $(find / -maxdepth 3 -name “test”) </code></pre>
+<h2 id="进程前后台操作用到以下命令：实例"><a href="#进程前后台操作用到以下命令：实例" class="headerlink" title="进程前后台操作用到以下命令：实例"></a>进程前后台操作用到以下命令：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yanximin/p/13397708.html">实例</a></h2></li>
+</ol>
 <ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
+<li><p>在前台结束进程<code>Control+C</code></p>
+</li>
+<li><p>在前台暂停进程<code>Control+Z</code></p>
+</li>
+<li><p>查看后台执行的进程 查看进程号码<code>jobs</code></p>
+</li>
+<li><p>运行命令时，在命令末尾加上&amp;可让命令在后台执行<code>&amp;</code></p>
+</li>
+<li><p>将命令进程号码为N的命令进程放到前台执行<code>fg processNum</code>或者<code>%processNum</code></p>
+</li>
+<li><p>将命令进程号码为N的命令进程放到后台执行<code>bg processNum</code></p>
+</li>
 </ul>
-
+<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><table>
+<thead>
+<tr>
+<th align="center">命令</th>
+<th align="center">全拼</th>
+<th align="center">含义</th>
+</tr>
+</thead>
+<tbody><tr>
+<td align="center">pwd</td>
+<td align="center">print work directory</td>
+<td align="center">打印当前目录 显示出当前工作目录的绝对路径</td>
+</tr>
+<tr>
+<td align="center">ps</td>
+<td align="center">process status</td>
+<td align="center">进程状态，类似于windows的任务管理器,常用参数：－auxf</td>
+</tr>
+<tr>
+<td align="center">ps -auxf</td>
+<td align="center">/</td>
+<td align="center">显示进程状态</td>
+</tr>
+<tr>
+<td align="center">df</td>
+<td align="center">disk free</td>
+<td align="center">其功能是显示磁盘可用空间数目信息及空间结点信息。换句话说，就是报告在任何安装的设备或目录中，还剩多少自由的空间。</td>
+</tr>
+<tr>
+<td align="center">du</td>
+<td align="center">Disk usage</td>
+<td align="center">磁盘使用率</td>
+</tr>
+<tr>
+<td align="center">rpm</td>
+<td align="center">RedHat Package Management</td>
+<td align="center">是RedHat的发明之一</td>
+</tr>
+<tr>
+<td align="center">rmdir</td>
+<td align="center">Remove Directory</td>
+<td align="center">删除目录</td>
+</tr>
+<tr>
+<td align="center">rm</td>
+<td align="center">Remove</td>
+<td align="center">删除目录或文件</td>
+</tr>
+<tr>
+<td align="center">cat</td>
+<td align="center">concatenate</td>
+<td align="center">连锁/查看文件</td>
+</tr>
+<tr>
+<td align="center">cat file1file2&gt;&gt;file3</td>
+<td align="center">/</td>
+<td align="center">把文件1和文件2的内容联合起来放到file3中</td>
+</tr>
+<tr>
+<td align="center">insmod</td>
+<td align="center">install module</td>
+<td align="center">载入模块</td>
+</tr>
+<tr>
+<td align="center">ln -s</td>
+<td align="center">link -soft</td>
+<td align="center">创建一个软链接，相当于创建一个快捷方式</td>
+</tr>
+<tr>
+<td align="center">mkdir</td>
+<td align="center">Make Directory</td>
+<td align="center">创建目录</td>
+</tr>
+<tr>
+<td align="center">touch</td>
+<td align="center">touch</td>
+<td align="center">创建文件</td>
+</tr>
+<tr>
+<td align="center">man</td>
+<td align="center">Manual</td>
+<td align="center">查看命令操作手册</td>
+</tr>
+<tr>
+<td align="center">su</td>
+<td align="center">Swith user</td>
+<td align="center">切换用户</td>
+</tr>
+<tr>
+<td align="center">cd</td>
+<td align="center">Change directory</td>
+<td align="center">切换目录</td>
+</tr>
+<tr>
+<td align="center">ls</td>
+<td align="center">List files</td>
+<td align="center">文件列表</td>
+</tr>
+<tr>
+<td align="center">mkdir</td>
+<td align="center">Make directory</td>
+<td align="center">创建文件夹</td>
+</tr>
+<tr>
+<td align="center">rmdir</td>
+<td align="center">Remove directory</td>
+<td align="center">删除文件夹</td>
+</tr>
+<tr>
+<td align="center">mkfs</td>
+<td align="center">Make file system</td>
+<td align="center">生成系统文件</td>
+</tr>
+<tr>
+<td align="center">fsck</td>
+<td align="center">File system check</td>
+<td align="center">文件系统检查</td>
+</tr>
+<tr>
+<td align="center">mv</td>
+<td align="center">Move file</td>
+<td align="center">移动文件</td>
+</tr>
+<tr>
+<td align="center">rm</td>
+<td align="center">Remove file</td>
+<td align="center">删除文件</td>
+</tr>
+<tr>
+<td align="center">cp</td>
+<td align="center">Copy file</td>
+<td align="center">拷贝文件</td>
+</tr>
+<tr>
+<td align="center">scp</td>
+<td align="center">scp -r root@ip:/folder/file /folder</td>
+<td align="center">远程拷贝文件，把什么拷贝到哪里去</td>
+</tr>
+<tr>
+<td align="center">ln</td>
+<td align="center">Link files</td>
+<td align="center">链接文件</td>
+</tr>
+<tr>
+<td align="center">fg</td>
+<td align="center">Foreground</td>
+<td align="center">将命令进程号码为N的命令进程放到前台执行</td>
+</tr>
+<tr>
+<td align="center">bg</td>
+<td align="center">Background</td>
+<td align="center">将命令进程号码为N的命令进程放到后台执行</td>
+</tr>
+<tr>
+<td align="center">chown</td>
+<td align="center">Change owner</td>
+<td align="center">更改某个文件或目录的所有者</td>
+</tr>
+<tr>
+<td align="center">chgrp</td>
+<td align="center">Change group</td>
+<td align="center">更改某个文件或目录的用户组</td>
+</tr>
+<tr>
+<td align="center">chmod</td>
+<td align="center">Change mode</td>
+<td align="center">设置权限</td>
+</tr>
+<tr>
+<td align="center">umount</td>
+<td align="center">Unmount</td>
+<td align="center">取消挂载</td>
+</tr>
+<tr>
+<td align="center">tail</td>
+<td align="center">tail -f</td>
+<td align="center">实时读取文件</td>
+</tr>
+</tbody></table>
+<h2 id="THE-END"><a href="#THE-END" class="headerlink" title="THE END!"></a><label style="color:red">THE END!</label></h2>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 544752682@qq.com </span>
     </div>

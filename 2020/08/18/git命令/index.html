@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>about | 柯洁的博客</title>
-  <meta name="keywords" content="">
-  <meta name="description" content="about | 柯洁的博客">
+  <title>Git命令 | 柯洁的博客</title>
+  <meta name="keywords" content=" Git ">
+  <meta name="description" content="Git命令 | 柯洁的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="Why Blog对博客的理解喜欢写Blog的人，会经历三个阶段。  第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。   第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。   第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。  我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对">
 <meta property="og:type" content="website">
@@ -425,24 +425,39 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="page-" class="article article-type-page" itemscope itemprop="blogPost">
+        <article id="post-git命令" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">about</h1>
+        <h1 class="article-title">Git命令</h1>
     
     <div class="article-meta">
         
         
         
+        <span class="book">
+            <i class="iconfont icon-category"></i>
+            
+            
+            <a  data-rel="技术">技术</a>
+            
+        </span>
+        
+        
+        <span class="tag">
+            <i class="iconfont icon-tag"></i>
+            
+            <a class="color4">Git</a>
+            
+        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-16 03:52:45'>2020-08-16 03:48</time>
+            发布时间 : <time class="date" title='最后更新: 2020-08-21 23:12:41'>2020-08-18 23:39</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:403</span>
+        <span>字数:2.6k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -472,7 +487,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-1"><a class="toc-link" href="#Why-Blog"><span class="toc-text">Why Blog</span></a><ol class="toc-child"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%AF%B9%E5%8D%9A%E5%AE%A2%E7%9A%84%E7%90%86%E8%A7%A3"><span class="toc-text">对博客的理解</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%85%B3%E4%BA%8Ekkejie"><span class="toc-text">关于kkejie</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%8D%9A%E5%AE%A2%E5%B9%B3%E5%8F%B0"><span class="toc-text">博客平台</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-text">日常使用的命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">Git使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%B0%E5%BB%BA%E7%89%88%E6%9C%AC%E4%BB%93%E5%BA%93"><span class="toc-text">1. 新建版本仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%85%8D%E7%BD%AE"><span class="toc-text">2. 配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A2%9E%E5%8A%A0-%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="toc-text">3. 增加&#x2F;删除文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4"><span class="toc-text">4. 代码提交</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%88%86%E6%94%AF"><span class="toc-text">5. 分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%A0%87%E7%AD%BE"><span class="toc-text">6. 标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E6%9F%A5%E7%9C%8B%E4%BF%A1%E6%81%AF-%E6%90%9C%E7%B4%A2"><span class="toc-text">7. 查看信息&#x2F;搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="toc-text">8. 远程同步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E6%92%A4%E9%94%80"><span class="toc-text">9. 撤销</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E5%85%B6%E4%BB%96"><span class="toc-text">10. 其他</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></li></ol>
     
 <style>
     .left-col .switch-btn,
@@ -489,30 +504,279 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <h1 id="Why-Blog"><a href="#Why-Blog" class="headerlink" title="Why Blog"></a>Why Blog</h1><h2 id="对博客的理解"><a href="#对博客的理解" class="headerlink" title="对博客的理解"></a>对博客的理解</h2><p>喜欢写Blog的人，会经历三个阶段。</p>
-<blockquote>
-<p>第一阶段，刚接触Blog，觉得很新鲜，试着选择一个免费空间来写。</p>
-</blockquote>
-<blockquote>
-<p>第二阶段，发现免费空间限制太多，就自己购买域名和空间，搭建独立博客。</p>
-</blockquote>
-<blockquote>
-<p>第三阶段，觉得独立博客的管理太麻烦，最好在保留控制权的前提下，让别人来管，自己只负责写文章。</p>
-</blockquote>
-<p>我们每个人的在网络上产生的数据越来越多，这些信息是我们在互联网上存在过的痕迹，值得我们认真对待。但是它们被分散分布在各个网站上。很多时候我们很难将它们聚合在一起，而且各个网站的信息排布方式也没有办法自由控制，所以我们需要一个可以由自己主宰的空间——博客。</p>
-<p>通过博客，我们可以记录自己的生活和成长的轨迹。它不像 Twitter 那样碎片化，也不像 Facebook 那样关系化，它是私人的空间。</p>
-<h2 id="关于kkejie"><a href="#关于kkejie" class="headerlink" title="关于kkejie"></a>关于kkejie</h2><p><strong>kkejie</strong> 是博主（柯洁）的个人站。</p>
-<p>到目前为止已经写了<code class="article_number"></code>篇文章， 共<code class="site_word_count"></code>字。</p>
-<p>本站访问人数：<code class="site_uv"></code>人次 ， 访问量：<code class="site_pv"></code>次</p>
-<h2 id="博客平台"><a href="#博客平台" class="headerlink" title="博客平台"></a>博客平台</h2><p>这个博客通过 <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a> 生成，部署在 <a target="_blank" rel="noopener" href="https://pages.github.com/">GitHub Pages</a>主题 <a target="_blank" rel="noopener" href="https://github.com/yelog/hexo-theme-3-hexo">3-hexo</a> 已经在github上开源</p>
-<p><code>3-hexo</code> 主题使用交流可以加 Q群: <a target="_blank" href="//shang.qq.com/wpa/qunwpa?idkey=e8cf083cc097141eaf323396f1766809b8e90ff00c67bb441898f672892f6904"><img data-ignore border="0" src="//pub.idqqimg.com/wpa/images/group.png" alt="3-hexo使用交流" title="3-hexo使用交流"></a></p>
-<p>主要功能：</p>
-<ul>
-<li>搜索支持文章标题、标签(#标签)、作者(@作者)</li>
-<li>pad/手机等移动端适配</li>
-<li>页面全局快捷键 <a target="_blank" rel="noopener" href='http://yelog.org/2017/03/24/3-hexo-shortcuts/'>3-hexo快捷键说明</a></li>
-</ul>
-
+        <p><div class='inner-toc'><h2>本文目录</h2><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%97%A5%E5%B8%B8%E4%BD%BF%E7%94%A8%E7%9A%84%E5%91%BD%E4%BB%A4"><span class="toc-text">日常使用的命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#Git%E4%BD%BF%E7%94%A8%E6%96%B9%E6%B3%95"><span class="toc-text">Git使用方法</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-%E6%96%B0%E5%BB%BA%E7%89%88%E6%9C%AC%E4%BB%93%E5%BA%93"><span class="toc-text">1. 新建版本仓库</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E9%85%8D%E7%BD%AE"><span class="toc-text">2. 配置</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E5%A2%9E%E5%8A%A0-%E5%88%A0%E9%99%A4%E6%96%87%E4%BB%B6"><span class="toc-text">3. 增加&#x2F;删除文件</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E4%BB%A3%E7%A0%81%E6%8F%90%E4%BA%A4"><span class="toc-text">4. 代码提交</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E5%88%86%E6%94%AF"><span class="toc-text">5. 分支</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%A0%87%E7%AD%BE"><span class="toc-text">6. 标签</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-%E6%9F%A5%E7%9C%8B%E4%BF%A1%E6%81%AF-%E6%90%9C%E7%B4%A2"><span class="toc-text">7. 查看信息&#x2F;搜索</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-%E8%BF%9C%E7%A8%8B%E5%90%8C%E6%AD%A5"><span class="toc-text">8. 远程同步</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E6%92%A4%E9%94%80"><span class="toc-text">9. 撤销</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E5%85%B6%E4%BB%96"><span class="toc-text">10. 其他</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></li></ol></div></p>
+<h2 id="日常使用的命令"><a href="#日常使用的命令" class="headerlink" title="日常使用的命令"></a>日常使用的命令</h2><pre><code>在当前目录建立仓库：git init
+指定目录作为git仓库： git init newrepo
+添加新文件（filename）： git add filename/*/.
+提交到仓库：git commit -m &quot;Adding files&quot;  |  git commit -a -m &quot;changed some files&quot;
+从git拉取代码： git clone ssh://….git
+将代码从仓库推送到服务器： git push ssh://….git
+从服务器更新本地仓库代码
+查看远程分支：git branch -a
+切换分支：git checkout
+查看提交日志：git log
+回滚到指定的commit：git reset --hard commitid
+远程回滚到指定的commit：git push origin dev（要回滚的分支） --force
+删除add但没commit的内容：git reset HEAD</code></pre>
+<h2 id="Git使用方法"><a href="#Git使用方法" class="headerlink" title="Git使用方法"></a>Git使用方法</h2><p>下面整理的 Git 命令清单。几个专业名词的译名如下。</p>
+<pre><code>Workspace：工作区
+Index / Stage：暂存区
+Repository：仓库区（本地仓库）
+Remote：远程仓库</code></pre>
+<h3 id="1-新建版本仓库"><a href="#1-新建版本仓库" class="headerlink" title="1. 新建版本仓库"></a>1. 新建版本仓库</h3><pre><code>```
+# 在当前目录新建一个Git代码库
+$ git init
+# 新建一个目录，将其初始化为Git代码库
+$ git init [project-name]
+# 下载一个项目和它的整个代码历史, -o 给远程仓库起名:faker,默认origin
+$ git clone [-o faker] [url]
+```</code></pre>
+<h3 id="2-配置"><a href="#2-配置" class="headerlink" title="2. 配置"></a>2. 配置</h3><pre><code>Git的设置文件为.gitconfig，它可以在用户主目录下（全局配置），也可以在项目目录下（项目配置）。
+```
+# 显示当前的Git配置
+$ git config --list
+# 编辑Git配置文件
+$ git config -e [--global]
+# 设置提交代码时的用户信息
+$ git config [--global] user.name &quot;[name]&quot;
+$ git config [--global] user.email &quot;[email address]&quot;
+# 设置大小写敏感（windows不区分大小写的解决办法）
+$ git config core.ignorecase  false
+```</code></pre>
+<h3 id="3-增加-删除文件"><a href="#3-增加-删除文件" class="headerlink" title="3. 增加/删除文件"></a>3. 增加/删除文件</h3><pre><code>```
+# 添加指定文件到暂存区
+$ git add [file1] [file2] ...
+# 添加指定目录到暂存区，包括子目录
+$ git add [dir]
+# 添加当前目录的所有文件到暂存区
+$ git add .
+# 添加每个变化前，都会要求确认
+# 对于同一个文件的多处变化，可以实现分次提交
+$ git add -p
+# 删除工作区文件，并且将这次删除放入暂存区
+$ git rm [file1] [file2] ...
+# 停止追踪指定文件，但该文件会保留在工作区
+$ git rm --cached [file]
+# 改名文件，并且将这个改名放入暂存区
+$ git mv [file-original] [file-renamed]
+```</code></pre>
+<h3 id="4-代码提交"><a href="#4-代码提交" class="headerlink" title="4. 代码提交"></a>4. 代码提交</h3><pre><code>```
+# 提交暂存区到仓库区
+$ git commit -m [message]
+# 提交暂存区的指定文件到仓库区
+$ git commit [file1] [file2] ... -m [message]
+# 提交工作区自上次commit之后的变化，直接到仓库区
+$ git commit -a
+# 提交时显示所有diff信息
+$ git commit -v
+# 使用一次新的commit，替代上一次提交
+# 如果代码没有任何新变化，则用来改写上一次commit的提交信息
+$ git commit --amend -m [message]
+# 重做上一次commit，并包括指定文件的新变化
+$ git commit --amend [file1] [file2] ...
+```</code></pre>
+<h3 id="5-分支"><a href="#5-分支" class="headerlink" title="5. 分支"></a>5. 分支</h3><pre><code>```
+# 列出所有本地分支
+$ git branch
+# 列出所有远程分支
+$ git branch -r
+# 列出所有本地分支和远程分支
+$ git branch -a
+# 列出所有本地分支，并展示没有分支最后一次提交的信息
+$ git branch -v
+# 列出所有本地分支，并展示没有分支最后一次提交的信息和远程分支的追踪情况
+$ git branch -vv
+# 列出所有已经合并到当前分支的分支
+$ git branch --merged
+# 列出所有还没有合并到当前分支的分支
+$ git branch --no-merged
+# 新建一个分支，但依然停留在当前分支
+$ git branch [branch-name]
+# 新建一个分支，并切换到该分支
+$ git checkout -b [branch]
+# 新建一个与远程分支同名的分支，并切换到该分支
+$ git checkout --track [branch-name]
+# 新建一个分支，指向指定commit
+$ git branch [branch] [commit]
+# 新建一个分支，与指定的远程分支建立追踪关系
+$ git branch --track [branch] [remote-branch]
+# 切换到指定分支，并更新工作区
+$ git checkout [branch-name]
+# 切换到上一个分支
+$ git checkout -
+# 建立追踪关系，在现有分支与指定的远程分支之间
+$ git branch --set-upstream-to=[remote-branch]
+$ git branch --set-upstream [branch] [remote-branch] # 已被弃用
+# 合并指定分支到当前分支
+$ git merge [branch]
+# 中断此次合并（你可能不想处理冲突）
+$ git merge --abort
+# 选择一个commit，合并进当前分支
+$ git cherry-pick [commit]
+# 删除分支
+$ git branch -d [branch-name]
+#新增远程分支 远程分支需先在本地创建,再进行推送
+$ git push origin [branch-name]
+# 删除远程分支
+$ git push origin --delete [branch-name]
+$ git branch -dr [remote/branch]
+```</code></pre>
+<h3 id="6-标签"><a href="#6-标签" class="headerlink" title="6. 标签"></a>6. 标签</h3><pre><code>```
+# 列出所有tag
+$ git tag
+# 新建一个tag在当前commit
+$ git tag [tag]
+# 新建一个tag在指定commit
+$ git tag [tag] [commit]
+# 删除本地tag
+$ git tag -d [tag]
+# 删除远程tag
+$ git push origin :refs/tags/[tagName]
+# 查看tag信息
+$ git show [tag]
+# 提交指定tag
+$ git push [remote] [tag]
+# 提交所有tag
+$ git push [remote] --tags
+# 新建一个分支，指向某个tag
+$ git checkout -b [branch] [tag]
+```</code></pre>
+<h3 id="7-查看信息-搜索"><a href="#7-查看信息-搜索" class="headerlink" title="7. 查看信息/搜索"></a>7. 查看信息/搜索</h3><pre><code>```
+# 显示有变更的文件
+$ git status [-sb] #s:short,给一个短格式的展示，b:展示当前分支
+# 显示当前分支的版本历史
+$ git log
+# 显示commit历史，以及每次commit发生变更的文件
+$ git log --stat
+# 搜索提交历史，根据关键词
+$ git log -S [keyword]
+# 显示某个commit之后的所有变动，每个commit占据一行
+$ git log [tag] HEAD --pretty=format:%s
+# 显示某个commit之后的所有变动，其&quot;提交说明&quot;必须符合搜索条件
+$ git log [tag] HEAD --grep feature
+# 显示某个文件的版本历史，包括文件改名
+$ git log --follow [file]
+$ git whatchanged [file]
+# 显示指定文件相关的每一次diff
+$ git log -p [file]
+# 显示过去5次提交
+$ git log -5 --pretty --oneline
+# 图形化显示所有分支
+$ git log --oneline --graph --all
+# 显示在分支2而不在分支1中的提交
+$ git log [分支1]..[分支2]
+$ git log ^[分支1] [分支2]
+$ git log [分支2] --not [分支1]
+# 显示两个分支不同时包含的提交
+$ git log [分支1]...[分支2]
+# 显示所有提交过的用户，按提交次数排序
+$ git shortlog -sn
+# 显示指定文件是什么人在什么时间修改过
+$ git blame [file]
+# 显示暂存区和工作区的差异
+$ git diff
+# 显示暂存区和上一个commit的差异
+$ git diff --cached [file]
+# 显示工作区与当前分支最新commit之间的差异
+$ git diff HEAD
+# 显示两次提交之间的差异
+$ git diff [first-branch]...[second-branch]
+# 显示今天你写了多少行代码
+$ git diff --shortstat &quot;@&amp;#123;0 day ago&amp;#125;&quot;
+# 显示某次提交的元数据和内容变化
+$ git show [commit]
+# 显示某次提交发生变化的文件
+$ git show --name-only [commit]
+# 显示某次提交时，某个文件的内容
+$ git show [commit]:[filename]
+# 显示当前分支的最近几次提交
+$ git reflog
+# 搜索你工作目录的文件，输出匹配行号
+$ git grep -n [关键字]
+# 搜索你工作目录的文件，输出每个文件包含多少个匹配
+$ git grep --count [关键字]
+# 优化阅读
+$ git grep --break --heading [关键字]
+# 查询iCheck这个字符串那次提交的
+$ git log -SiCheck --oneline
+# 查询git_deflate_bound函数每一次的变更
+$ git log -L :git_deflate_bound:zlib.c
+```</code></pre>
+<h3 id="8-远程同步"><a href="#8-远程同步" class="headerlink" title="8. 远程同步"></a>8. 远程同步</h3><pre><code>```
+# 下载远程仓库的所有变动 [shortname] 为远程仓库的shortname, 如origin,为空时:默认origin
+$ git fetch [shortname]
+# 显示所有远程仓库
+$ git remote -v
+#显式地获得远程引用的完整列表 [shortname] 为远程仓库的shortname, 如origin,为空时:默认origin
+$ git ls-remote [shortname]
+# 显示某个远程仓库的信息 [remote] 为远程仓库的shortname, 如origin
+$ git remote show [shortname]
+# 增加一个新的远程仓库，并命名
+$ git remote add [shortname] [url]
+# 重命名一个远程仓库（shortname）
+$ git remote rename [旧仓库名] [新仓库名]
+# 删除一个远程链接
+$ git remote rm [shortname] [url]
+$ git remote remove [shortname] [url]
+# 修改远程仓库地址
+$ git remote set-url [shortname] [url]
+# 取回远程仓库的变化，并与本地分支合并
+$ git pull [remote] [branch]
+# 上传本地当前分支到远程仓库
+git push [remote]
+# 上传本地指定分支到远程仓库
+$ git push [remote] [branch]
+# 推送所有分支到远程仓库
+$ git push [remote] --all
+# 强行推送当前分支到远程仓库，即使有冲突
+$ git push [remote] --force
+```</code></pre>
+<h3 id="9-撤销"><a href="#9-撤销" class="headerlink" title="9. 撤销"></a>9. 撤销</h3><pre><code>```
+# 恢复暂存区的指定文件到工作区
+$ git checkout [file]
+# 恢复某个commit的指定文件到暂存区和工作区
+$ git checkout [commit] [file]
+# 恢复暂存区的所有文件到工作区
+$ git checkout .
+# 只会保留源码（工作区），回退commit(本地仓库)与index（暂存区）到某个版本
+$ git reset &lt;commit_id&gt;   #默认为 --mixed模式
+$ git reset --mixed &lt;commit_id&gt;
+# 保留源码（工作区）和index（暂存区），只回退commit（本地仓库）到某个版本
+$ git reset --soft &lt;commit_id&gt;
+# 源码（工作区）、commit（本地仓库）与index（暂存区）都回退到某个版本
+$ git reset --hard &lt;commit_id&gt;
+# 恢复到最后一次提交的状态
+$ git reset --hard HEAD
+# 新建一个commit，用来撤销指定commit
+# 后者的所有变化都将被前者抵消，并且应用到当前分支
+$ git revert [commit]
+# 将工作区和暂存区的代码全都存储起来了
+$ git stash [save]
+# 只保存工作区，不存储暂存区
+$ git stash --keep-index
+# 存储工作区、暂存区和未跟踪文件
+$ git stash -u
+$ git stash --include-untracked
+# 不存储所有改动的东西，但会交互式的提示那些改动想要被储藏、哪些改动需要保存在工作目录中
+$ git stash --patch
+# 不指定名字，Git认为指定最近的储藏，将存储的代码（工作区和暂存区）都应用到工作区
+$ git stash apply [stash@&amp;#123;2&amp;#125;]
+# 存储的工作区和暂存区的代码应用到工作区和暂存区
+$ git stash apply [stash@&amp;#123;2&amp;#125;] --index
+# 将存储的代码（工作区和暂存区）都应用到工作区，并从栈上扔掉他
+$ git stash pop
+# 删除stash@&amp;#123;2&amp;#125;的存储
+$ git stash drop [stash@&amp;#123;2&amp;#125;]
+# 获取储藏的列表
+$ git stash list
+# 移除工作目录中所有未跟踪的文件及口口那个的子目录，不会移除.gitiignore忽略的文件
+$ git clean -f -d
+```</code></pre>
+<h3 id="10-其他"><a href="#10-其他" class="headerlink" title="10. 其他"></a>10. 其他</h3><pre><code>```
+# 生成一个可供发布的压缩包
+$ git archive
+```</code></pre>
+<h2 id="THE-END"><a href="#THE-END" class="headerlink" title="THE END!"></a><label style="color:red">THE END!</label></h2>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 544752682@qq.com </span>
     </div>
