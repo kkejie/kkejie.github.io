@@ -2,9 +2,9 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Linux常用命令 | 柯洁的博客</title>
-  <meta name="keywords" content=" Linux ">
-  <meta name="description" content="Linux常用命令 | 柯洁的博客">
+  <title>Flask框架笔记.md | 柯洁的博客</title>
+  <meta name="keywords" content="">
+  <meta name="description" content="Flask框架笔记.md | 柯洁的博客">
     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 <meta name="description" content="[toc] 博主简介个人信息 姓名： 柯洁  性别：男    年龄：26 学历： 江西农业大学（2017.7毕业、统招全日制、学信网可查）    专业：软件工程 手机（微信同号）： 17607025447     现在居住地： 深圳龙岗区     邮箱： &amp;#x35;&amp;#52;&amp;#52;&amp;#x37;&amp;#x35;&amp;#x32;&amp;#54;&amp;#56;&amp;#50;&amp;#64;&amp;#113;&amp;#113;&amp;#46;&amp;">
 <meta property="og:type" content="website">
@@ -467,39 +467,24 @@
 </aside>
 <div id="post">
     <div class="pjax">
-        <article id="post-Linux常用命令" class="article article-type-post" itemscope itemprop="blogPost">
+        <article id="post-Flask框架笔记" class="article article-type-post" itemscope itemprop="blogPost">
     
-        <h1 class="article-title">Linux常用命令</h1>
+        <h1 class="article-title">Flask框架笔记.md</h1>
     
     <div class="article-meta">
         
         
         
-        <span class="book">
-            <i class="iconfont icon-category"></i>
-            
-            
-            <a  data-rel="技术">技术</a>
-            
-        </span>
-        
-        
-        <span class="tag">
-            <i class="iconfont icon-tag"></i>
-            
-            <a class="color1">Linux</a>
-            
-        </span>
         
     </div>
     <div class="article-meta">
         
-            发布时间 : <time class="date" title='最后更新: 2020-08-21 23:11:26'>2020-08-18 23:39</time>
+            发布时间 : <time class="date" title='最后更新: 2020-09-09 01:10:06'>2020-09-09 00:18</time>
         
     </div>
     <div class="article-meta">
         
-        <span>字数:794</span>
+        <span>字数:3.1k</span>
         
         
         <span id="busuanzi_container_page_pv">
@@ -529,7 +514,7 @@
     
     <div class="toc-ref">
     
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF"><span class="toc-text">查看系统信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E6%9F%A5%E6%89%BE%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%96%87%E4%BB%B6%E5%B9%B6%E5%88%A0%E9%99%A4"><span class="toc-text">linux查找符合条件的文件并删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E5%89%8D%E5%90%8E%E5%8F%B0%E6%93%8D%E4%BD%9C%E7%94%A8%E5%88%B0%E4%BB%A5%E4%B8%8B%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%AE%9E%E4%BE%8B"><span class="toc-text">进程前后台操作用到以下命令：实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4"><span class="toc-text">命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Flask%E4%BB%8B%E7%BB%8D"><span class="toc-text">1. Flask介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85Flask"><span class="toc-text">2. 安装Flask</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-text">3. 目录结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BC%80%E5%A7%8B-Hello-world"><span class="toc-text">4. 开始 Hello world</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%A8%A1%E6%9D%BF"><span class="toc-text">5. 模板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%A8%A1%E6%9D%BF%E7%BB%A7%E6%89%BF"><span class="toc-text">6. 模板继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-HTML%E8%87%AA%E5%8A%A8%E8%BD%AC%E4%B9%89"><span class="toc-text">7. HTML自动转义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-Request-%E5%AF%B9%E8%B1%A1"><span class="toc-text">8.Request 对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E4%BC%9A%E8%AF%9Dsession"><span class="toc-text">9.会话session</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E6%9E%84%E5%BB%BA%E5%93%8D%E5%BA%94"><span class="toc-text">10. 构建响应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-Cookie%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">11. Cookie的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="toc-text">12. 错误处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-url%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-text">13. url重定向</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a>
     
 <style>
     .left-col .switch-btn,
@@ -546,224 +531,270 @@
     
     <div class="article-entry" itemprop="articleBody">
       
-        <p><div class='inner-toc'><h2>本文目录</h2><ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#%E6%9F%A5%E7%9C%8B%E7%B3%BB%E7%BB%9F%E4%BF%A1%E6%81%AF"><span class="toc-text">查看系统信息</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#linux%E6%9F%A5%E6%89%BE%E7%AC%A6%E5%90%88%E6%9D%A1%E4%BB%B6%E7%9A%84%E6%96%87%E4%BB%B6%E5%B9%B6%E5%88%A0%E9%99%A4"><span class="toc-text">linux查找符合条件的文件并删除</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E8%BF%9B%E7%A8%8B%E5%89%8D%E5%90%8E%E5%8F%B0%E6%93%8D%E4%BD%9C%E7%94%A8%E5%88%B0%E4%BB%A5%E4%B8%8B%E5%91%BD%E4%BB%A4%EF%BC%9A%E5%AE%9E%E4%BE%8B"><span class="toc-text">进程前后台操作用到以下命令：实例</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#%E5%91%BD%E4%BB%A4"><span class="toc-text">命令</span></a></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></li></ol></div></p>
-<h2 id="查看系统信息"><a href="#查看系统信息" class="headerlink" title="查看系统信息"></a>查看系统信息</h2><ol>
-<li>查看物理CPU的个数<pre><code class="sh">cat /proc/cpuinfo | grep &quot;physical id&quot; | sort | uniq | wc -l</code></pre>
-</li>
-<li>查看物理CPU内核的个数<pre><code class="sh">cat /proc/cpuinfo | grep &quot;cpu cores&quot; | uniq</code></pre>
-</li>
-<li>查看所有逻辑CPU的个数<pre><code class="sh">cat /proc/cpuinfo | grep &quot;processor&quot; | wc -l</code></pre>
-</li>
-<li>查看每个物理CPU中逻辑CPU的个数<pre><code class="sh">cat /proc/cpuinfo | grep &#39;siblings&#39; | uniq</code></pre>
-</li>
-<li>查询CPU是否启用超线程<pre><code class="sh">cat /proc/cpuinfo | grep -e &quot;cpu cores&quot; -e &quot;siblings&quot; | sort | uniq</code></pre>
-</li>
-</ol>
-<h2 id="linux查找符合条件的文件并删除"><a href="#linux查找符合条件的文件并删除" class="headerlink" title="linux查找符合条件的文件并删除"></a>linux查找符合条件的文件并删除</h2><ol>
-<li><p>找到根目录下所有的以test开头的文件并把查找结果当做参数传给rm -rf命令进行删除： </p>
-<pre><code class="sh">find / -name “test*” |xargs rm -rf 
-find / -name “test*” -exec rm -rf &amp;#123;&amp;#125; \; 
-rm -rf $(find / -name “test”)</code></pre>
-</li>
-<li><p>如果想指定递归深度，可以这样(只会查找三层目录中符合条件的文件并删除掉！)： </p>
-<pre><code class="sh">find / -maxdepth 3 -name “*.mp3” |xargs rm -rf 
-find / -maxdepth 3 -name “test*” -exec rm -rf &amp;#123;&amp;#125; \; 
-rm -rf $(find / -maxdepth 3 -name “test”) </code></pre>
-<h2 id="进程前后台操作用到以下命令：实例"><a href="#进程前后台操作用到以下命令：实例" class="headerlink" title="进程前后台操作用到以下命令：实例"></a>进程前后台操作用到以下命令：<a target="_blank" rel="noopener" href="https://www.cnblogs.com/yanximin/p/13397708.html">实例</a></h2></li>
-</ol>
-<ul>
-<li><p>在前台结束进程<code>Control+C</code></p>
-</li>
-<li><p>在前台暂停进程<code>Control+Z</code></p>
-</li>
-<li><p>查看后台执行的进程 查看进程号码<code>jobs</code></p>
-</li>
-<li><p>运行命令时，在命令末尾加上&amp;可让命令在后台执行<code>&amp;</code></p>
-</li>
-<li><p>将命令进程号码为N的命令进程放到前台执行<code>fg processNum</code>或者<code>%processNum</code></p>
-</li>
-<li><p>将命令进程号码为N的命令进程放到后台执行<code>bg processNum</code></p>
-</li>
+        <p><div class='inner-toc'><h2>本文目录</h2><ol class="toc"><li class="toc-item toc-level-3"><a class="toc-link" href="#1-Flask%E4%BB%8B%E7%BB%8D"><span class="toc-text">1. Flask介绍</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#2-%E5%AE%89%E8%A3%85Flask"><span class="toc-text">2. 安装Flask</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#3-%E7%9B%AE%E5%BD%95%E7%BB%93%E6%9E%84"><span class="toc-text">3. 目录结构</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#4-%E5%BC%80%E5%A7%8B-Hello-world"><span class="toc-text">4. 开始 Hello world</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#5-%E6%A8%A1%E6%9D%BF"><span class="toc-text">5. 模板</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#6-%E6%A8%A1%E6%9D%BF%E7%BB%A7%E6%89%BF"><span class="toc-text">6. 模板继承</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#7-HTML%E8%87%AA%E5%8A%A8%E8%BD%AC%E4%B9%89"><span class="toc-text">7. HTML自动转义</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#8-Request-%E5%AF%B9%E8%B1%A1"><span class="toc-text">8.Request 对象</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#9-%E4%BC%9A%E8%AF%9Dsession"><span class="toc-text">9.会话session</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#10-%E6%9E%84%E5%BB%BA%E5%93%8D%E5%BA%94"><span class="toc-text">10. 构建响应</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#11-Cookie%E7%9A%84%E4%BD%BF%E7%94%A8"><span class="toc-text">11. Cookie的使用</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#12-%E9%94%99%E8%AF%AF%E5%A4%84%E7%90%86"><span class="toc-text">12. 错误处理</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#13-url%E9%87%8D%E5%AE%9A%E5%90%91"><span class="toc-text">13. url重定向</span></a></li></ol></li><li class="toc-item toc-level-2"><a class="toc-link" href="#THE-END"><span class="toc-text">THE END!</span></a></div></p>
+<h3 id="1-Flask介绍"><a href="#1-Flask介绍" class="headerlink" title="1. Flask介绍"></a>1. Flask介绍</h3><p>Flask是由python实现的一个web微框架，让我们可以使用Python语言快速实现一个网站或Web服务。而且有对应的python3及python2版本。首先这边选择的是python3.6，虽然python3在网上好像名声不咋地，而且一度有文章说python3正在毁灭Python，但是反正是别人选的，也就将就了。</p>
+<h3 id="2-安装Flask"><a href="#2-安装Flask" class="headerlink" title="2. 安装Flask"></a>2. 安装Flask</h3><pre><code class="sh">pip install flask</code></pre>
+<h3 id="3-目录结构"><a href="#3-目录结构" class="headerlink" title="3. 目录结构"></a>3. 目录结构</h3><pre><code class="sh">flask-demo/
+  ├ run.py           # 应用启动程序
+  ├ config.py        # 环境配置
+  ├ requirements.txt # 列出应用程序依赖的所有Python包
+  ├ tests/           # 测试代码包
+  │   ├ __init__.py 
+  │   └ test_*.py    # 测试用例
+  └ myapp/
+      ├ admin/       # 蓝图目录
+      ├ static/
+      │   ├ css/     # css文件目录
+      │   ├ img/     # 图片文件目录
+      │   └ js/      # js文件目录
+      ├ templates/   # 模板文件目录
+      ├ __init__.py    
+      ├ forms.py     # 存放所有表单，如果多，将其变为一个包
+      ├ models.py    # 存放所有数据模型，如果多，将其变为一个包
+      └ views.py     # 存放所有视图函数，如果多，将其变为一个包</code></pre>
+<h3 id="4-开始-Hello-world"><a href="#4-开始-Hello-world" class="headerlink" title="4. 开始 Hello world"></a>4. 开始 Hello world</h3><pre><code class="python">from flask import Flask
+
+app = Flask(__name__)
+
+@app.route(&#39;/&#39;)
+def index():
+    return &#39;Hello World&#39;
+
+if __name__ == &#39;__main__&#39;:
+    app.debug = True # 设置调试模式，生产模式的时候要关掉debug
+    app.run()</code></pre>
+<p>这是flask框架制作的一个最小的应用。使用python运行后访问localhost:5000就能看到网页显示Hello world。<br>这里首先引入了Flask类，然后给这个类创建了一个实例，name代表这个模块的名字。因为这个模块是直接被运行的所以此时name的值是main。然后用route()这个修饰器定义了一个路由，告诉flask如何访问该函数。最后用run()函数使这个应用在服务器上运行起来。</p>
+<h3 id="5-模板"><a href="#5-模板" class="headerlink" title="5. 模板"></a>5. 模板</h3><ol>
+<li>模板文件放在目录 remplates 文件夹中</li>
+<li>通过 render_template() 方法来渲染模板<ul>
+<li>第一个参数为模板名称”hello.html”</li>
+<li>第二个参数为传到模板的变量，可以是多个</li>
 </ul>
-<h2 id="命令"><a href="#命令" class="headerlink" title="命令"></a>命令</h2><table>
-<thead>
-<tr>
-<th align="center">命令</th>
-<th align="center">全拼</th>
-<th align="center">含义</th>
-</tr>
-</thead>
-<tbody><tr>
-<td align="center">pwd</td>
-<td align="center">print work directory</td>
-<td align="center">打印当前目录 显示出当前工作目录的绝对路径</td>
-</tr>
-<tr>
-<td align="center">ps</td>
-<td align="center">process status</td>
-<td align="center">进程状态，类似于windows的任务管理器,常用参数：－auxf</td>
-</tr>
-<tr>
-<td align="center">ps -auxf</td>
-<td align="center">/</td>
-<td align="center">显示进程状态</td>
-</tr>
-<tr>
-<td align="center">df</td>
-<td align="center">disk free</td>
-<td align="center">其功能是显示磁盘可用空间数目信息及空间结点信息。换句话说，就是报告在任何安装的设备或目录中，还剩多少自由的空间。</td>
-</tr>
-<tr>
-<td align="center">du</td>
-<td align="center">Disk usage</td>
-<td align="center">磁盘使用率</td>
-</tr>
-<tr>
-<td align="center">rpm</td>
-<td align="center">RedHat Package Management</td>
-<td align="center">是RedHat的发明之一</td>
-</tr>
-<tr>
-<td align="center">rmdir</td>
-<td align="center">Remove Directory</td>
-<td align="center">删除目录</td>
-</tr>
-<tr>
-<td align="center">rm</td>
-<td align="center">Remove</td>
-<td align="center">删除目录或文件</td>
-</tr>
-<tr>
-<td align="center">cat</td>
-<td align="center">concatenate</td>
-<td align="center">连锁/查看文件</td>
-</tr>
-<tr>
-<td align="center">cat file1file2&gt;&gt;file3</td>
-<td align="center">/</td>
-<td align="center">把文件1和文件2的内容联合起来放到file3中</td>
-</tr>
-<tr>
-<td align="center">insmod</td>
-<td align="center">install module</td>
-<td align="center">载入模块</td>
-</tr>
-<tr>
-<td align="center">ln -s</td>
-<td align="center">link -soft</td>
-<td align="center">创建一个软链接，相当于创建一个快捷方式</td>
-</tr>
-<tr>
-<td align="center">mkdir</td>
-<td align="center">Make Directory</td>
-<td align="center">创建目录</td>
-</tr>
-<tr>
-<td align="center">touch</td>
-<td align="center">touch</td>
-<td align="center">创建文件</td>
-</tr>
-<tr>
-<td align="center">man</td>
-<td align="center">Manual</td>
-<td align="center">查看命令操作手册</td>
-</tr>
-<tr>
-<td align="center">su</td>
-<td align="center">Swith user</td>
-<td align="center">切换用户</td>
-</tr>
-<tr>
-<td align="center">cd</td>
-<td align="center">Change directory</td>
-<td align="center">切换目录</td>
-</tr>
-<tr>
-<td align="center">ls</td>
-<td align="center">List files</td>
-<td align="center">文件列表</td>
-</tr>
-<tr>
-<td align="center">mkdir</td>
-<td align="center">Make directory</td>
-<td align="center">创建文件夹</td>
-</tr>
-<tr>
-<td align="center">rmdir</td>
-<td align="center">Remove directory</td>
-<td align="center">删除文件夹</td>
-</tr>
-<tr>
-<td align="center">mkfs</td>
-<td align="center">Make file system</td>
-<td align="center">生成系统文件</td>
-</tr>
-<tr>
-<td align="center">fsck</td>
-<td align="center">File system check</td>
-<td align="center">文件系统检查</td>
-</tr>
-<tr>
-<td align="center">mv</td>
-<td align="center">Move file</td>
-<td align="center">移动文件</td>
-</tr>
-<tr>
-<td align="center">rm</td>
-<td align="center">Remove file</td>
-<td align="center">删除文件</td>
-</tr>
-<tr>
-<td align="center">cp</td>
-<td align="center">Copy file</td>
-<td align="center">拷贝文件</td>
-</tr>
-<tr>
-<td align="center">scp</td>
-<td align="center">scp -r root@ip:/folder/file /folder</td>
-<td align="center">远程拷贝文件，把什么拷贝到哪里去</td>
-</tr>
-<tr>
-<td align="center">ln</td>
-<td align="center">Link files</td>
-<td align="center">链接文件</td>
-</tr>
-<tr>
-<td align="center">fg</td>
-<td align="center">Foreground</td>
-<td align="center">将命令进程号码为N的命令进程放到前台执行</td>
-</tr>
-<tr>
-<td align="center">bg</td>
-<td align="center">Background</td>
-<td align="center">将命令进程号码为N的命令进程放到后台执行</td>
-</tr>
-<tr>
-<td align="center">chown</td>
-<td align="center">Change owner</td>
-<td align="center">更改某个文件或目录的所有者</td>
-</tr>
-<tr>
-<td align="center">chgrp</td>
-<td align="center">Change group</td>
-<td align="center">更改某个文件或目录的用户组</td>
-</tr>
-<tr>
-<td align="center">chmod</td>
-<td align="center">Change mode</td>
-<td align="center">设置权限</td>
-</tr>
-<tr>
-<td align="center">umount</td>
-<td align="center">Unmount</td>
-<td align="center">取消挂载</td>
-</tr>
-<tr>
-<td align="center">tail</td>
-<td align="center">tail -f</td>
-<td align="center">实时读取文件</td>
-</tr>
-</tbody></table>
+</li>
+</ol>
+<pre><code class="python"># hello.py
+from flask import Flask
+from flask import render_template
+
+app = Flask(__name__)
+
+@app.route(&#39;/hello&#39;)
+@app.route(&#39;/hello/&lt;name&gt;&#39;)
+def  hello(name=None):
+    return  render_template(&#39;hello.html&#39;,  name=name)
+
+if __name__ == &#39;__main__&#39;:
+    app.run(host=&#39;0.0.0.0&#39;,  debug=True)</code></pre>
+<pre><code class="html"># hello.html
+&lt;!doctype html&gt;
+&lt;title&gt;Hello Sample&lt;/title&gt;
+&amp;#123;% if name %&amp;#125;
+  &lt;h1&gt;Hello &amp;#123;&amp;#123; name &amp;#125;&amp;#125;!&lt;/h1&gt;
+&amp;#123;% else %&amp;#125;
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+&amp;#123;%  endif  %&amp;#125;</code></pre>
+<p>变量或表达式由<code>&#123;&#123; &#125;&#125;</code>修饰，而控制语句由<code>&#123;% %&#125;</code>修饰</p>
+<h3 id="6-模板继承"><a href="#6-模板继承" class="headerlink" title="6. 模板继承"></a>6. 模板继承</h3><p>一般我们的网站虽然页面多，但是很多部分是重用的，比如页首，页脚，导航栏之类的。对于每个页面，都要写这些代码，很麻烦。Flask的Jinja2模板支持模板继承功能，省去了这些重复代码。让我们基于上面的例子，在”templates”目录下，创建一个名为”layout.html”的模板：</p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;title&gt;Hello Sample&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot;  type=&quot;text/css&quot;  href=&quot;&amp;#123;&amp;#123; url_for(&#39;static&#39;, filename=&#39;style.css&#39;) &amp;#125;&amp;#125;&quot;&gt;
+&lt;div class=&quot;page&quot;&gt;
+    &amp;#123;% block body %&amp;#125;
+    &amp;#123;% endblock %&amp;#125;
+&lt;/div&gt;</code></pre>
+<p>再修改之前的”hello.html”，把原来的代码定义在”block body”中，并在代码一开始”继承”上面的”layout.html”：</p>
+<pre><code class="html">&amp;#123;%  extends  &quot;layout.html&quot;  %&amp;#125;
+&amp;#123;%  block  body  %&amp;#125;
+&amp;#123;%  if  name  %&amp;#125;
+  &lt;h1&gt;Hello &amp;#123;&amp;#123; name &amp;#125;&amp;#125;!&lt;/h1&gt;
+&amp;#123;% else %&amp;#125;
+  &lt;h1&gt;Hello World!&lt;/h1&gt;
+&amp;#123;%  endif  %&amp;#125;
+&amp;#123;%  endblock  %&amp;#125;</code></pre>
+<p>打开浏览器，再看下”http://localhost:5000/hello/man”页面的源码。</p>
+<pre><code class="html">&lt;!doctype html&gt;
+&lt;title&gt;Hello Sample&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot;  type=&quot;text/css&quot;  href=&quot;/static/style.css&quot;&gt;
+&lt;div class=&quot;page&quot;&gt;
+  &lt;h1&gt;Hello man!&lt;/h1&gt;
+&lt;/div&gt;</code></pre>
+<p>你会发现，虽然”render_template()”加载了”hello.html”模板，但是”layout.html”的内容也一起被加载了。而且”hello.html”中的内容被放置在”layout.html”中<code>&#123;% block body %&#125; </code>的位置上。形象的说，就是”hello.html”继承了”layout.html”。</p>
+<h3 id="7-HTML自动转义"><a href="#7-HTML自动转义" class="headerlink" title="7. HTML自动转义"></a>7. HTML自动转义</h3><p>我们看下下面的代码：</p>
+<pre><code class="python">@app.route(&#39;/&#39;)
+def  index():
+    return  &#39;&lt;div&gt;Hello %s&lt;/div&gt;&#39;  %  &#39;&lt;em&gt;Flask&lt;/em&gt;&#39;</code></pre>
+<p>打开页面，你会看到”Hello Flask”字样，而且”Flask”是斜体的，因为我们加了”em”标签。但有时我们并不想让这些HTML标签自动转义，特别是传递表单参数时，很容易导致HTML注入的漏洞。我们把上面的代码改下，引入”Markup”类：</p>
+<pre><code class="python">from  flask import  Flask,  Markup
+
+app  =  Flask(__name__)
+
+@app.route(&#39;/&#39;)
+def  index():
+    return  Markup(&#39;&lt;div&gt;Hello %s&lt;/div&gt;&#39;)  %  &#39;&lt;em&gt;Flask&lt;/em&gt;&#39;</code></pre>
+<p>再次打开页面，”em”标签显示在页面上了。Markup还有很多方法，比如”escape()”呈现HTML标签, “striptags()”去除HTML标签。这里就不一一列举了。</p>
+<h3 id="8-Request-对象"><a href="#8-Request-对象" class="headerlink" title="8.Request 对象"></a>8.Request 对象</h3><pre><code class="python">from flask import Flask,url_for,request,render_template
+
+@app.route(&#39;/login&#39;, methods=[&#39;POST&#39;, &#39;GET&#39;])
+def login():
+    if request.method == &#39;POST&#39;:
+        if request.form[&#39;user&#39;] == &#39;admin&#39;:
+            return &#39;Admin login successfully!&#39;
+        else:
+            return &#39;No such user!&#39;
+    title = request.args.get(&#39;title&#39;, &#39;Default&#39;)
+    return render_template(&#39;login.html&#39;, title=title)
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)</code></pre>
+<p>简单解释下，request中”method”变量可以获取当前请求的方法，即”GET”, “POST”, “DELETE”, “PUT”等；”form”变量是一个字典，可以获取Post请求表单中的内容，在上例中，如果提交的表单中不存在”user”项，则会返回一个”KeyError”，你可以不捕获，页面会返回400错误（想避免抛出这”KeyError”，你可以用request.form.get(“user”)来替代）。而”request.args.get()”方法则可以获取Get请求URL中的参数，该函数的第二个参数是默认值，当URL参数不存在时，则返回默认值。</p>
+<p>在当前目录下，创建一个子目录”templates”（注意，一定要使用这个名字）。然后在”templates”目录下，添加</p>
+<pre><code class="html"># layout.html
+
+&lt;!doctype html&gt;
+&lt;title&gt;Hello Sample&lt;/title&gt;
+&lt;link rel=&quot;stylesheet&quot; type=&quot;text/css&quot; href=&quot;&amp;#123;&amp;#123; url_for(&#39;static&#39;, filename=&#39;style.css&#39;) &amp;#125;&amp;#125;&quot;&gt;
+&lt;div class=&quot;page&quot;&gt;
+    &amp;#123;% block body %&amp;#125;
+    &amp;#123;% endblock %&amp;#125;
+&lt;/div&gt;
+login.html
+
+&amp;#123;% extends &quot;layout.html&quot; %&amp;#125;
+&amp;#123;% block body %&amp;#125;
+&lt;form name=&quot;login&quot; action=&quot;/login&quot; method=&quot;post&quot;&gt;
+    Hello &amp;#123;&amp;#123; title &amp;#125;&amp;#125;, please login by:
+    &lt;input type=&quot;text&quot; name=&quot;user&quot; /&gt;
+&lt;/form&gt;
+&amp;#123;% endblock %&amp;#125;</code></pre>
+<p>图片.png</p>
+<p>图片.png</p>
+<h3 id="9-会话session"><a href="#9-会话session" class="headerlink" title="9.会话session"></a>9.会话session</h3><p>会话可以用来保存当前请求的一些状态，以便于在请求之前共享信息。</p>
+<pre><code class="python">from flask import Flask,url_for,request,render_template,redirect,session
+@app.route(&#39;/login&#39;, methods=[&#39;POST&#39;, &#39;GET&#39;])
+def login():
+    if request.method == &#39;POST&#39;:
+        if request.form[&#39;user&#39;] == &#39;admin&#39;:
+            session[&#39;user&#39;] = request.form[&#39;user&#39;]
+            return &#39;Admin login successfully!&#39;
+        else:
+            return &#39;No such user!&#39;
+    if &#39;user&#39; in session:
+        return &#39;Hello %s!&#39; % session[&#39;user&#39;]
+    else:
+        title = request.args.get(&#39;title&#39;, &#39;Default&#39;)
+        return render_template(&#39;login.html&#39;, title=title)
+@app.route(&#39;/logout&#39;)
+def logout():
+    session.pop(&#39;user&#39;, None)
+    return redirect(url_for(&#39;login&#39;))
+
+app.secret_key = &#39;123456&#39;
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)</code></pre>
+<p>你可以看到，”admin”登陆成功后，再打开”login”页面就不会出现表单了。然后打开logout页面可以登出。session对象的操作就跟一个字典一样。特别提醒，使用session时一定要设置一个密钥”app.secret_key”，如上例。不然你会得到一个运行时错误，内容大致是”RuntimeError: the session is unavailable because no secret key was set”。密钥要尽量复杂，最好使用一个随机数，这样不会有重复，上面的例子不是一个好密钥。</p>
+<h3 id="10-构建响应"><a href="#10-构建响应" class="headerlink" title="10. 构建响应"></a>10. 构建响应</h3><p>在之前的例子中，请求的响应我们都是直接返回字符串内容，或者通过模板来构建响应内容然后返回。其实我们也可以先构建响应对象，设置一些参数（比如响应头）后，再将其返回。修改下上例中的Get请求部分：</p>
+<pre><code class="python">from flask import Flask,url_for,request,render_template,redirect,session,make_response
+
+@app.route(&#39;/login&#39;, methods=[&#39;POST&#39;, &#39;GET&#39;])
+def login():
+    if request.method == &#39;POST&#39;:
+        ...
+    if &#39;user&#39; in session:
+        ...
+    else:
+        title = request.args.get(&#39;title&#39;, &#39;Default&#39;)
+        response = make_response(render_template(&#39;login.html&#39;, title=title), 200)
+        response.headers[&#39;key&#39;] = &#39;value&#39;
+        return response
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)</code></pre>
+<p>打开浏览器调试，在Get请求用户未登录状态下，你会看到响应头中有一个”key”项。”make_response”方法就是用来构建response对象的，第二个参数代表响应状态码，缺省就是200。</p>
+<p>图片.png</p>
+<h3 id="11-Cookie的使用"><a href="#11-Cookie的使用" class="headerlink" title="11. Cookie的使用"></a>11. Cookie的使用</h3><p>提到了Session，当然也要介绍Cookie喽，毕竟没有Cookie，Session就根本没法用（不知道为什么？查查去）。Flask中使用Cookie也很简单：</p>
+<pre><code class="python">from flask import Flask,url_for,request,render_template,redirect,session,make_response
+import time
+@app.route(&#39;/login&#39;, methods=[&#39;POST&#39;, &#39;GET&#39;])
+def login():
+    response = None
+    if request.method == &#39;POST&#39;:
+        if request.form[&#39;user&#39;] == &#39;admin&#39;:
+            session[&#39;user&#39;] = request.form[&#39;user&#39;]
+            response = make_response(&#39;Admin login successfully!&#39;)
+            response.set_cookie(&#39;login_time&#39;, time.strftime(&#39;%Y-%m-%d %H:%M:%S&#39;))
+        ...
+
+    else:
+        if &#39;user&#39; in session:
+            login_time = request.cookies.get(&#39;login_time&#39;)
+            response = make_response(&#39;Hello %s, you logged in on %s&#39; % (session[&#39;user&#39;], login_time))
+        ...
+
+    return response
+app.secret_key = &#39;123456&#39;
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)</code></pre>
+<p>这次我们引入了”time”模块来获取当前系统时间。我们在返回响应时，通过”response.set_cookie()”函数，来设置Cookie项，之后这个项值会被保存在浏览器中。这个函数的第三个参数（max_age）可以设置该Cookie项的有效期，单位是秒，不设的话，在浏览器关闭后，该Cookie项即失效。</p>
+<p>在请求中，”request.cookies”对象就是一个保存了浏览器Cookie的字典，使用其”get()”函数就可以获取相应的键值。</p>
+<p>图片.png</p>
+<h3 id="12-错误处理"><a href="#12-错误处理" class="headerlink" title="12. 错误处理"></a>12. 错误处理</h3><p>使用”abort()”函数可以直接退出请求，返回错误代码：</p>
+<pre><code class="python">rom flask import Flask,abort
+
+app = Flask(__name__)
+@app.route(&#39;/error&#39;)
+def error():
+    abort(404)
+
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)</code></pre>
+<p>上例会显示浏览器的404错误页面。有时候，我们想要在遇到特定错误代码时做些事情，或者重写错误页面，可以用下面的方法：</p>
+<pre><code class="python">rom flask import Flask,abort
+
+app = Flask(__name__)
+
+@app.errorhandler(404)
+def page_not_found(error):
+    return render_template(&#39;404.html&#39;), 404
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)</code></pre>
+<p>图片.png<br>不过，在实际开发过程中，我们并不会经常使用”abort()”来退出，常用的错误处理方法一般都是异常的抛出或捕获。装饰器”@app.errorhandler()”除了可以注册错误代码外，还可以注册指定的异常类型。让我们来自定义一个异常：</p>
+<pre><code class="python">class InvalidUsage(Exception):
+    status_code = 400
+
+    def __init__(self, message, status_code=400):
+        Exception.__init__(self)
+        self.message = message
+        self.status_code = status_code
+
+
+@app.errorhandler(InvalidUsage)
+def invalid_usage(error):
+    response = make_response(error.message)
+    response.status_code = error.status_code
+    return response
+@app.route(&#39;/exception&#39;)
+def exception():
+    raise InvalidUsage(&#39;No privilege to access the resource&#39;, status_code=403)
+if __name__ == &quot;__main__&quot;:
+    app.run(debug=True)</code></pre>
+<p>图片.png<br>我们在上面的代码中定义了一个异常”InvalidUsage”，同时我们通过装饰器”@app.errorhandler()”修饰了函数”invalid_usage()”，装饰器中注册了我们刚定义的异常类。这也就意味着，一但遇到”InvalidUsage”异常被抛出，这个”invalid_usage()”函数就会被调用。</p>
+<h3 id="13-url重定向"><a href="#13-url重定向" class="headerlink" title="13. url重定向"></a>13. url重定向</h3><p>Flask的URL规则是基于Werkzeug的路由模块。模块背后的思想是基于 Apache 以及更早的 HTTP 服务器主张的先例，保证优雅且唯一的 URL。</p>
+<pre><code class="python">@app.route(&#39;/projects/&#39;)
+def projects():
+    return &#39;The project page&#39;
+
+@app.route(&#39;/about&#39;)
+def about():
+    return &#39;The about page&#39;</code></pre>
+<p>访问第一个路由不带/时，Flask会自动重定向到正确地址。<br>访问第二个路由时末尾带上/后Flask会直接报404 NOT FOUND错误。</p>
+<p>重定向”redirect()”函数的使用在上面例子中已有出现。作用就是当客户端浏览某个网址时，将其导向到另一个网址。常见的例子，比如用户在未登录时浏览某个需授权的页面，我们将其重定向到登录页要求其登录先。</p>
+<pre><code class="python">from flask import session, redirect
+
+@app.route(&#39;/&#39;)
+def index():
+    if &#39;user&#39; in session:
+        return &#39;Hello %s!&#39; % session[&#39;user&#39;]
+    else:
+        return redirect(url_for(&#39;login&#39;), 302)</code></pre>
+<p>“redirect()”的第二个参数时HTTP状态码，可取的值有301, 302, 303, 305和307，默认即302（为什么没有304？留给大家去思考）。</p>
 <h2 id="THE-END"><a href="#THE-END" class="headerlink" title="THE END!"></a><label style="color:red">THE END!</label></h2>
       
        <hr><span style="font-style: italic;color: gray;"> 转载请注明来源，欢迎对文章中的引用来源进行考证，欢迎指出任何有错误或不够清晰的表达。可以在下面评论区评论，也可以邮件至 544752682@qq.com </span>
